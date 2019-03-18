@@ -1,0 +1,208 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button, .button2, .button3 {
+    width: 270px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+}
+
+.button::before, .button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.button::before {
+    background-color: rgba(236, 240, 241,.2);
+    width: 270px;
+    height: 70px;
+}
+
+.button:hover::before {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.button::after {
+    border: 2px solid #fff;
+    width: 268px;
+    height: 68px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    opacity: 0;
+}
+
+.button:hover::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+
+.iconpack {
+    width: 270px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.fa-facebook-f, .fa-github, .fa-instagram {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    padding: 8px 0;
+    margin: 0 5px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.fa-facebook-f {
+    background-color: rgba(60,90,153, .3);
+}
+
+.fa-github {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.fa-instagram {
+    background-color: rgba(228, 64, 95, .3)
+}
+
+.fa-facebook-f:hover {
+    background-color: rgba(60,90,153, .8);
+}
+
+.fa-github:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.fa-instagram:hover {
+    background-color: rgba(228, 64, 95, .8)
+}
+
+.button2 {
+    background-color: rgba(0, 0, 15,.2);
+    color: #000;
+    position: relative;
+}
+
+.text {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.button2:hover .iconpack {
+    opacity: 1;
+}
+
+.button2:hover .text {
+    opacity: 0;
+}
+
+.button3 {
+    transition:.6s;
+    -webkit-transition:.6s;
+    -moz-transition:.6s;
+    -ms-transition:.6s;
+    -o-transition:.6s;
+    background-color: rgba(236, 240, 241,.2);
+}
+
+.button3::before, .button3::after {
+    content: "";
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition:.6s;
+    -webkit-transition:.6s;
+    -moz-transition:.6s;
+    -ms-transition:.6s;
+    -o-transition:.6s;
+}
+
+.button3::before {
+    top: 0;
+}
+
+.button3::after {
+    bottom: 0;
+}
+
+.button3:hover {
+    letter-spacing: 5px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.button3:hover::before, .button3:hover::after {
+    width: 100%;
+}

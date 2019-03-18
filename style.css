@@ -9,6 +9,7 @@ body, p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .button, .button2, .button3 {
@@ -205,4 +206,13 @@ body, p {
 
 .button3:hover::before, .button3:hover::after {
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .button, .button2, .button3 {
+        margin: 20px 0;
+    }
 }

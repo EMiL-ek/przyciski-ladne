@@ -65,11 +65,11 @@ body, p {
     border: 2px solid #fff;
     width: 268px;
     height: 68px;
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
     opacity: 0;
 }
 
@@ -79,7 +79,7 @@ body, p {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    opacity: 1;
+    opacity: 0.6;
 }
 
 .iconpack {
